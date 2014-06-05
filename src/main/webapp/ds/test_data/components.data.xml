@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>  
+  
+<component>  
+    <componentType>Load Balancer </componentType>
+    <software>ElasticLoadBalancer </software>
+    <interconnections>ws1</interconnections>   
+</component>
+
+<component>  
+    <componentType>Web Server </componentType>
+    <software>Apache 2.0 </software>
+    <interconnections>lb1 </interconnections>   
+</component>  
+
+<component>  
+    <componentType>Web Server </componentType>
+    <software>Tomcat </software>
+    <interconnections>lb1 </interconnections>   
+</component>  
+
+<component>  
+    <componentType>Application Server </componentType>
+    <software>JBoss </software>
+    <interconnections>ws1 </interconnections>   
+</component>  
+
+  
+</List>  

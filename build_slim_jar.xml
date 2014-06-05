@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project CumulusGenius with Jar-in-Jar Loader">
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+	<!--ANT 1.7 is required                                        -->
+	<target name="create_run_jar">
+		<jar destfile="/Users/mugglmenzel/cumulusgenius.jar">
+			<manifest>
+				<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader" />
+				<attribute name="Rsrc-Main-Class" value="de.eorg.cumulusgenius.experiments.DistanceExperimentMultiComponentGlobalParallel" />
+				<attribute name="Class-Path" value="." />
+				<attribute name="Rsrc-Class-Path" value="./" />
+			</manifest>
+
+			<zipfileset src="jar-in-jar-loader.zip" />
+
+			<fileset dir="/Users/mugglmenzel/Documents/workspace/CumulusGenius/src/main/webapp/WEB-INF/classes" />
+			<!--
+        	<zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/gwt/gwt-servlet/2.4.0" includes="gwt-servlet-2.4.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/gwt/gwt-user/2.4.0" includes="gwt-user-2.4.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/validation/validation-api/1.0.0.GA" includes="validation-api-1.0.0.GA.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/validation/validation-api/1.0.0.GA" includes="validation-api-1.0.0.GA-sources.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-allcompute/1.0.0" includes="jclouds-allcompute-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/savvis-symphonyvpdc/1.0.0" includes="savvis-symphonyvpdc-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-compute/1.0.0" includes="jclouds-compute-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-scriptbuilder/1.0.0" includes="jclouds-scriptbuilder-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.3" includes="java-xmlbuilder-0.3.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/eucalyptus-partnercloud-ec2/1.0.0" includes="eucalyptus-partnercloud-ec2-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/eucalyptus/1.0.0" includes="eucalyptus-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/deltacloud/1.0.0" includes="deltacloud-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/aws-ec2/1.0.0" includes="aws-ec2-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/common/aws-common/1.0.0" includes="aws-common-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/rimuhosting/1.0.0" includes="rimuhosting-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/nova/1.0.0" includes="nova-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/common/openstack-common/1.0.0" includes="openstack-common-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/byon/1.0.0" includes="byon-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/yaml/snakeyaml/1.8" includes="snakeyaml-1.8.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/ec2/1.0.0" includes="ec2-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudservers-us/1.0.0" includes="cloudservers-us-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudservers-uk/1.0.0" includes="cloudservers-uk-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/cloudservers/1.0.0" includes="cloudservers-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/vcloud/1.0.0" includes="vcloud-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/common/vcloud-common/1.0.0" includes="vcloud-common-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-core/1.0.0" includes="jclouds-core-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/net/oauth/core/oauth/20100527" includes="oauth-20100527.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/aopalliance/aopalliance/1.0" includes="aopalliance-1.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/sun/jersey/jersey-core/1.6" includes="jersey-core-1.6.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0" includes="guice-assistedinject-3.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/inject/guice/3.0" includes="guice-3.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/inject/javax.inject/1" includes="javax.inject-1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/annotation/jsr250-api/1.0" includes="jsr250-api-1.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/code/gson/gson/1.7.1" includes="gson-1.7.1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/guava/guava/r09" includes="guava-r09.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/code/findbugs/jsr305/1.3.9" includes="jsr305-1.3.9.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/vcloudexpress/1.0.0" includes="vcloudexpress-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/trmk-vcloudexpress/1.0.0" includes="trmk-vcloudexpress-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/common/trmk-common/1.0.0" includes="trmk-common-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/trmk-ecloud/1.0.0" includes="trmk-ecloud-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/bluelock-vcdirector/1.0.0" includes="bluelock-vcdirector-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/bluelock-vcloud-vcenterprise/1.0.0" includes="bluelock-vcloud-vcenterprise-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/bluelock-vcloud-zone01/1.0.0" includes="bluelock-vcloud-zone01-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/stratogen-vcloud-mycloud/1.0.0" includes="stratogen-vcloud-mycloud-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/gogrid/1.0.0" includes="gogrid-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/driver/jclouds-jsch/1.0.0" includes="jclouds-jsch-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/jcraft/jsch/0.1.44-1" includes="jsch-0.1.44-1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/slicehost/1.0.0" includes="slicehost-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/elasticstack/1.0.0" includes="elasticstack-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/elastichosts-lon-p/1.0.0" includes="elastichosts-lon-p-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/elastichosts-sat-p/1.0.0" includes="elastichosts-sat-p-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/elastichosts-lon-b/1.0.0" includes="elastichosts-lon-b-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/openhosting-east1/1.0.0" includes="openhosting-east1-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/serverlove-z1-man/1.0.0" includes="serverlove-z1-man-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/skalicloud-sdg-my/1.0.0" includes="skalicloud-sdg-my-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudsigma-zrh/1.0.0" includes="cloudsigma-zrh-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-allblobstore/1.0.0" includes="jclouds-allblobstore-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/s3/1.0.0" includes="s3-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/jclouds-blobstore/1.0.0" includes="jclouds-blobstore-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/aws-s3/1.0.0" includes="aws-s3-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/ninefold-storage/1.0.0" includes="ninefold-storage-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/synaptic-storage/1.0.0" includes="synaptic-storage-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudonestorage/1.0.0" includes="cloudonestorage-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/walrus/1.0.0" includes="walrus-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/eucalyptus-partnercloud-s3/1.0.0" includes="eucalyptus-partnercloud-s3-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/azureblob/1.0.0" includes="azureblob-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/common/azure-common/1.0.0" includes="azure-common-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/atmos/1.0.0" includes="atmos-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/swift/1.0.0" includes="swift-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/cloudfiles/1.0.0" includes="cloudfiles-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudfiles-us/1.0.0" includes="cloudfiles-us-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/provider/cloudfiles-uk/1.0.0" includes="cloudfiles-uk-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/jclouds/api/filesystem/1.0.0" includes="filesystem-1.0.0.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/commons-io/commons-io/1.4" includes="commons-io-1.4.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/smartgwt/smartgwt/2.5" includes="smartgwt-2.5.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/jdo/jdo2-api/2.3-eb" includes="jdo2-api-2.3-eb.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/javax/transaction/jta/1.1" includes="jta-1.1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/appengine/orm/datanucleus-appengine/1.0.4.1" includes="datanucleus-appengine-1.0.4.1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1" includes="geronimo-jta_1.1_spec-1.1.1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/org/datanucleus/datanucleus-core/1.1.5" includes="datanucleus-core-1.1.5.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/appengine/datanucleus-jpa/1.1.5" includes="datanucleus-jpa-1.1.5.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/appengine/geronimo-jpa_3.0_spec/1.1.1" includes="geronimo-jpa_3.0_spec-1.1.1.jar"/>
+            <zipfileset dir="/Users/mugglmenzel/.m2/repository/com/google/appengine/appengine-api-1.0-sdk/1.6.0" includes="appengine-api-1.0-sdk-1.6.0.jar"/>
+            -->
+		</jar>
+	</target>
+</project>

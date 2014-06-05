@@ -1,0 +1,2 @@
+serviceClass: de.eorg.cumulusgenius.client.services.LoginService
+path: C6F799BDA5DCF44AE0EA8E5E886BF2E0.gwt.rpc

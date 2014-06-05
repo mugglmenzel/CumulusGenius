@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>  
+  
+<cs_requirement>  
+    <name>Max. Latency</name>
+    <constraint> &lt; </constraint>
+    <value>100</value>
+    <metric>ms </metric>
+</cs_requirement>
+
+<cs_requirement>  
+    <name>Uptime</name>
+    <constraint> &gt;</constraint>
+    <value>99.998</value>
+     <metric>%</metric>
+</cs_requirement>
+
+<cs_requirement>  
+    <name>Hourly Cost CPU</name>
+    <constraint>&lt;</constraint>
+    <value>0.20</value>
+     <metric>$/h</metric>
+</cs_requirement>
+
+
+  
+</List>  

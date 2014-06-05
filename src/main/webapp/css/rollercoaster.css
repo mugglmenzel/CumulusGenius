@@ -1,0 +1,154 @@
+/** Allgemeine Elemente **/
+
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+	margin: 40px 0px 70px;
+}
+
+
+/** Tabs **/
+
+.gwt-TabPanel {
+margin-top: 4px
+}
+
+.gwt-TabPanelBottom {
+background-color: #E8E8E8
+}
+
+.gwt-TabBar {
+padding-top: 2px;
+border-bottom: 2px solid #878787;
+background-color: #fff;
+  
+}
+
+.gwt-TabBarItem {
+	width: 150px;
+	height: 50px;
+	border-bottom: 2px solid white;
+	text-align: center;
+	font-size: medium;
+	font-family: Arial;
+	background-color: #white;
+}
+
+.gwt-TabBarItem-selected {
+  padding: 1px;
+  font-weight: bold;
+  background-color: #white;
+  border-bottom: 2px solid white;
+  margin-right: 2px;
+}
+
+
+
+
+#components {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild1.PNG');
+	}
+	
+
+#components:hover {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild4.PNG');}
+
+#requirements {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild2.PNG');
+	}
+
+#requirements:hover{
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild5.PNG');
+	}
+	
+	
+#criteria {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild2.PNG');
+	}
+
+#criteria:hover {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild5.PNG');
+	}
+	
+#preferences {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild2.PNG');
+	}
+
+#preferences:hover {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild5.PNG');
+	}
+	
+#recommendation {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild3.PNG');
+	}
+
+#recommendation:hover {
+display: table-cell;
+vertical-align: middle;
+width: 150px;
+height: 50px;
+background-image:url('bild6.PNG');
+	}
+	
+/** Welcome View **/
+
+#loginPanel{
+	border-width:thin;
+	border-color: black;
+	border-style: solid;
+	
+	
+}
+
+#log{	
+	
+}
+
+#loginLabel{
+	
+}

@@ -1,0 +1,2 @@
+serviceClass: de.eorg.cumulusgenius.client.GreetingService
+path: B7A5A488C2F95B0C50DABD2ECDE0B115.gwt.rpc

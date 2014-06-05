@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>  
+  
+<vm_requirement>  
+    <name>Operating System</name>
+    <constraint>=</constraint>
+    <value>Ubuntu</value>
+    <metric>ordinal </metric>
+</vm_requirement>
+
+<vm_requirement>  
+    <name>Popularity</name>
+    <constraint>></constraint>
+    <value>80</value>
+     <metric>%</metric>
+</vm_requirement>
+
+
+  
+</List>  
